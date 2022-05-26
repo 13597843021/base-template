@@ -1,0 +1,19 @@
+# http://editorconfig.org
+#.editorconfig  的作用官方解释：EditorConfig 有助于维护跨多个编辑器和IDE从事同一项目的多个开发人员的一致编码风格，
+# EditorConfig 项目由一种用于定义编码样式的文件格式和一组文本编辑器插件组成
+# ，这些文本编辑器插件使编辑器可以读取文件格式并遵循定义的样式，EditorConfig 
+# 文件易于阅读，并且可以与版本控制系统很好地协同工作。通俗地讲，
+# 就是由于开发人员的习惯不一样所用的开发编辑器可能不同，在不同的编辑器之前保持代码格式一致的风格。
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.md]
+insert_final_newline = false
+trim_trailing_whitespace = false

@@ -1,0 +1,11 @@
+{
+    // 由于webpack别名配置好以后，如果想要在vscold中可以正确提示路径，就需要配置jsconfig.json文件：
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+        "@/*": ["src/*"]
+    }
+  },
+
+  "exclude": ["node_modules", "dist"]
+}
