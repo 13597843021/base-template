@@ -1,4 +1,5 @@
 <template>
+  <!-- 所有页面展示的地方 -->
   <section class="app-main">
     <transition name="fade-transform" mode="out-in">
       <router-view :key="key" />

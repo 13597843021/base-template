@@ -1,6 +1,7 @@
 <template>
   <div class="sidebar-logo-container" :class="{'collapse':collapse}">
     <transition name="sidebarLogoFade">
+      <!-- 根据collapse（收缩侧边栏的按钮）展示什么 -->
       <router-link v-if="collapse" key="collapse" class="sidebar-logo-link" to="/">
         <img v-if="logo" :src="logo" class="sidebar-logo">
         <h1 v-else class="sidebar-title">{{ title }} </h1>
@@ -24,7 +25,7 @@ export default {
   },
   data() {
     return {
-      title: 'Vue Admin Template',
+      title: '基础模板',
       logo: 'https://wpimg.wallstcn.com/69a1c46c-eb1c-4b46-8bd4-e9e686ef5251.png'
     }
   }

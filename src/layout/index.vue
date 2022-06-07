@@ -1,5 +1,5 @@
 <template>
-  <!-- 结构  -->
+  <!-- 主题结构划分  -->
   <div :class="classObj" class="app-wrapper">
     <!-- 遮罩层mobile小屏下会有，大屏是"desktop" -->
     <div v-if="device==='mobile'&&sidebar.opened" class="drawer-bg" @click="handleClickOutside" />
@@ -8,8 +8,8 @@
     <!-- 主体 -->
     <div class="main-container">
       <!-- 面包屑 -->
-      <div :class="{'fixed-header':fixedHeader}"><navbar />   </div>
-      <!-- 二级子路由 -->
+      <div :class="{'fixed-header':fixedHeader}"><Navbar /></div>
+      <!-- 二级子路由（主体） -->
       <app-main />
     </div>
   </div>

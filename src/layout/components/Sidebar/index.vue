@@ -1,5 +1,6 @@
 <template>
   <div :class="{'has-logo':showLogo}">
+    <!-- 头部的logo -->
     <logo v-if="showLogo" :collapse="isCollapse" />
     <el-scrollbar wrap-class="scrollbar-wrapper">
       <el-menu
@@ -33,6 +34,7 @@ export default {
     routes() {
       return this.$router.options.routes
     },
+    // 当前菜单设置的高亮
     activeMenu() {
       const route = this.$route
       const { meta, path } = route
@@ -42,12 +44,14 @@ export default {
       }
       return path
     },
+    // 图标的显示
     showLogo() {
       return this.$store.state.settings.sidebarLogo
     },
     variables() {
       return variables
     },
+    // 控制sidebar的收缩隐藏
     isCollapse() {
       return !this.sidebar.opened
     }

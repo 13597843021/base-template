@@ -1,9 +1,11 @@
 <template>
   <div class="navbar">
+    <!-- 伸缩按钮 -->
     <hamburger :is-active="sidebar.opened" class="hamburger-container" @toggleClick="toggleSideBar" />
-
+    <!-- 面包屑 -->
     <breadcrumb class="breadcrumb-container" />
 
+    <!-- 右边的导航栏 -->
     <div class="right-menu">
       <el-dropdown class="avatar-container" trigger="click">
         <div class="avatar-wrapper">
